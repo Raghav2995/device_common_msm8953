@@ -128,7 +128,6 @@ PRODUCT_PACKAGES += \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
-    libdisplayconfig \
     libqdMetaData \
     libqdMetaData.vendor \
     libgenlock \
@@ -404,13 +403,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Wi-Fi Display
-PRODUCT_PACKAGES += \
-    libnl \
-    libstagefright_enc_common \
-    libshim_wfdmmsink
+#PRODUCT_PACKAGES += \
+#    libnl \
+#    libstagefright_enc_common \
+#    libshim_wfdmmsink
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
